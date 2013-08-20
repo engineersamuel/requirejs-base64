@@ -13,14 +13,16 @@ In your require configuration:
         //...
     });
 
-Require base64 as a dependency in your module (coffeescript shown)
+Require base64 as a dependency in your module.
 
-    define ['base64'], (base64) ->
-        encoded =  base64.encode('Hello World!')
-        console.log "Encoded: #{encoded}"
+    define(['base64'], function(base64) {
 
-        decoded =  base64.encode(encoded)
-        console.log "Decoded: #{decoded}"
+        var encoded = base64.encode('Hello World!');
+        console.log("Encoded: " + encoded);
+
+        var decoded = base64.encode(encoded);
+        console.log("Decoded: " + decoded);
+    });
 
 # Heads up
 
