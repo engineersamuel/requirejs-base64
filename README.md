@@ -1,10 +1,10 @@
 # Usage
 
-Install with bower
+Install with [bower](http://bower.io/)
 
     bower install requirejs-base64
 
-In your require configuration:
+In your [requirejs](http://requirejs.org/) configuration:
 
     require.config({
         paths: {
@@ -13,7 +13,7 @@ In your require configuration:
         //...
     });
 
-Require base64 as a dependency in your module.
+Require base64 as a dependency in your [module](http://requirejs.org/docs/whyamd.html#amd).
 
     define(['base64'], function(base64) {
 
