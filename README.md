@@ -20,7 +20,7 @@ Require base64 as a dependency in your [module](http://requirejs.org/docs/whyamd
         var encoded = base64.encode('Hello World!');
         console.log("Encoded: " + encoded);
 
-        var decoded = base64.encode(encoded);
+        var decoded = base64.decode(encoded);
         console.log("Decoded: " + decoded);
     });
 
